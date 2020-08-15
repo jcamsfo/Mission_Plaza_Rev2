@@ -1,0 +1,17 @@
+# Yaml Defaults file
+images_info_filename:  Images_info-MST1.csv # test comment
+sequencer_info_filename:  Sequencer_info-MST1.csv  
+
+
+images_info_location:  ../Movie_Info/
+sequencer_info_location:  ../Movie_Info/
+
+## eventually part of the Images_Info File
+movies_location:  ../Movies/
+
+# {path, filename }
+grab_map: 	{ ../Maps/ , GRABMAP_MST_48x80.csv }
+sculpture_map:  { ../Maps/  , PMO5.csv }
+enclosure_map:  { ../Maps/ , Enclosure_Info1.csv }
+
+

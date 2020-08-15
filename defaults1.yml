@@ -1,0 +1,17 @@
+# Yaml Defaults file
+images_info_filename:  Images_info-MPZ1A.csv # test comment
+sequencer_info_filename:  Sequencer_info-MPZ1.csv # birds
+
+
+images_info_location:  ../Movie_Info/
+sequencer_info_location:  ../Movie_Info/
+
+## eventually part of the Images_Info File
+movies_location:  ../Movies/
+
+# {path, filename }
+grab_map: 	{ ../Maps/ , GRABMAP_MPZ_72x50.csv }
+sculpture_map:  { ../Maps/  , PIXELMAP_MPZ.csv }
+enclosure_map:  { ../Maps/ , Enclosure_Info1.csv }
+
+
