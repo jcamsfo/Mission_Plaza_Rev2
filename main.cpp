@@ -529,7 +529,7 @@ int main(){
 
 
 
-    char    Path[200] =  "../" ; //    /Salesforce/BuildingLoaderTop/";
+    char    Path[200] =  "../../" ; //    /Salesforce/BuildingLoaderTop/";
     char    File1[200] ;
 
     char    CurFile[200];
@@ -560,6 +560,7 @@ int main(){
     img_proc_B_U.create(IMAGE_ROWS,IMAGE_COLS,CV_32FC3);
 
     Mat_Sum_U.create(IMAGE_ROWS,IMAGE_COLS,CV_32FC3);
+
 
 
     printf("here0");
@@ -598,7 +599,7 @@ int main(){
 
         cout << "sculpture_map_info_location_file" << grab_map_info_location_file << endl  << endl; // asctime(time_X);
         cout << "sculpture_map_info_location_file" << sculpture_map_info_location_file << endl; // asctime(time_X);
-
+        cout << "movies_location" << movies_location<< endl; // asctime(time_X);
 
 
 
