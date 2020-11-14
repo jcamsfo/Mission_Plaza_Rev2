@@ -563,6 +563,7 @@ int main(){
 
 
 
+
     printf("here0");
 
     std::string Files_Info[8][10] = {};
@@ -571,6 +572,9 @@ int main(){
     std::string  grab_map_info_location_file, sculpture_map_info_location_file, enclosure_map_info_location_file, images_info_location_file, sequencer_info_location_file, movies_location;
 
     data_sets  = Read_YAML_Data("defaults1.yml", 8, 3,  Files_Info   );
+
+
+    cout << " HERE 13 " << endl;
 
 
     for(int jjj= 0; jjj < data_sets; jjj++ )
@@ -592,14 +596,18 @@ int main(){
 
     printf("here1");
 
+        cout << " HERE 13B " << endl;
+
+                cout << "sculpture_map_info_location_file" << grab_map_info_location_file << endl  << endl; // asctime(time_X);
+        cout << "sculpture_map_info_location_file" << sculpture_map_info_location_file << endl; // asctime(time_X);
+        cout << "movies_location" << movies_location<< endl; // asctime(time_X);
+
     tread = Read_Sample_Point_Location_Array_SS(grab_map_info_location_file,  Sample_Points, Num_Of_Samples_Per_Row);
     tread = Read_Map_SS(sculpture_map_info_location_file,  Sculpture_Map);  // SP6   SP  all points
 
 
+ cout << " HERE 13C " << endl;
 
-        cout << "sculpture_map_info_location_file" << grab_map_info_location_file << endl  << endl; // asctime(time_X);
-        cout << "sculpture_map_info_location_file" << sculpture_map_info_location_file << endl; // asctime(time_X);
-        cout << "movies_location" << movies_location<< endl; // asctime(time_X);
 
 
 
@@ -626,7 +634,12 @@ int main(){
     float Sequencer_Parameters[Max_Num_Of_Image_Files][Max_Num_Of_Image_Parameters];
 
 
+    cout << " HERE 14 " << images_info_location_file << endl;
+
     tread = Read_Image_Info_SS(images_info_location_file, Image_File_Names, Image_Parameters );
+
+
+    cout << " HERE 15 " << endl;
 
     for(int p=0; p<tread; p++)
     {
@@ -687,7 +700,7 @@ int main(){
         }
     }
 
-
+    cout << " HERE 16 " << endl;
 
     strcpy(File1, Path);
     strcat(File1, "Movies/black-MPZ.mp4");
@@ -850,6 +863,7 @@ int main(){
         First_Sequence_Image_X = 0;
     }
 
+    cout << " HERE 17 " << endl;
 
     while( (cnt!=4) || !Stop_Program)
     {

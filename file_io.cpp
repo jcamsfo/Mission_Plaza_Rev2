@@ -29,6 +29,8 @@ int Read_Sample_Point_Location_Array_SS(std::string FileName,  int SP[SAMPLE_ROW
     int row_cnt = 0;
     int Total_Read = 0;
 
+
+
     cout << endl << "heck" << endl ;
 
     // assume no more than 30 blank lines inbetween real data
